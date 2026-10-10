@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack Conf</title>
+
+    <!-- Bootstrap CDN link -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#speakers" class="nav-link">Speakers</a></li>
+                    <li class="nav-item"><a href="#schedule" class="nav-link">Schedule</a></li>
+                </ul>
+                <span class="navbar-text">
+                    Powered By <a href="#home" class="link-warning text-decoration-none">PARAGRAPH</a>
+                </span>
+            </div>
+        </div>
+     </nav>
+
+     <!-- Hero Section -->
+      <header id="home" class="bg-warning text-center py-5">
+        <div class="container py-4">
+            <h1 class="display-4">Full Stack Conf</h1>
+            <p class="lead text-black-50 mb-4">A One-Day Conference About All Things JavaScript</p>
+            <div class="btn-group btn-group-lg" role="group" aria-label="Conference actions">
+                <button class="btn btn-secondary" type="button" data-bs-toggle="modal" data-bs-target="#registerModal">Register Now</button>
+                <a href="#speakers" class="btn btn-dark" role="button">See Speakers</a>
+            </div>
+        </div>
+      </header>
+
+      <main>
+
+        <section class="py-5" id="about">
+            <!-- Member 2 -->
+        </section>
+
+        <section class="py-5" id="speakers">
+            <!-- Member 2 -->
+        </section>
+
+        <section class="py-5" id="schedule">
+            <!-- Member 3 -->
+        </section>
+
+        <section class="py-4" id="cta">
+            <!-- Member 3 -->
+        </section>
+      </main>
+
+      <footer id="footer">
+        <!-- Member 3 -->
+      </footer>
+
+      <!-- Section Modal (Member 4) -->
+       <!-- Make sure to use id="registerModal" because the hero and CTA buttons point at it with data-bs-target="#registerModal" -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

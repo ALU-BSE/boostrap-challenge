@@ -6,17 +6,17 @@
     <title>Full Stack Conf</title>
 
     <!-- Bootstrap CDN link -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
 
     <!-- Navigation Bar -->
-     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <div class="collapse navbar-collapse" id="mainNav">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                     <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
@@ -29,10 +29,10 @@
                 </span>
             </div>
         </div>
-     </nav>
+    </nav>
 
-     <!-- Hero Section -->
-      <header id="home" class="bg-warning text-center py-5">
+    <!-- Hero Section -->
+    <header id="home" class="bg-warning text-center py-5">
         <div class="container py-4">
             <h1 class="display-4">Full Stack Conf</h1>
             <p class="lead text-black-50 mb-4">A One-Day Conference About All Things JavaScript</p>
@@ -41,9 +41,9 @@
                 <a href="#speakers" class="btn btn-dark" role="button">See Speakers</a>
             </div>
         </div>
-      </header>
+    </header>
 
-      <main>
+    <main>
 
         <section class="py-5" id="about">
             <!-- Member 2 -->
@@ -54,6 +54,177 @@
         </section>
 
         <section class="py-5" id="schedule">
+            <!-- Member 3 -->
+        </section>
+
+        <section class="py-4" id="cta">
+            <!-- Member 3 -->
+        </section>
+
+    </main>
+
+    <footer id="footer">
+        <!-- Member 3 -->
+    </footer>
+
+    <!-- ============================================================
+         SECTION: MODAL (Member 4 — Atigbi Emmanuel Ayomikun)
+         id="registerModal" matches data-bs-target in the hero button
+         and the CTA button built by Member 3.
+    ============================================================ -->
+    <div class="modal fade" id="registerModal" tabindex="-1"
+         aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+
+                <!-- Modal Header — yellow to match the conference brand -->
+                <div class="modal-header bg-warning">
+                    <h5 class="modal-title fw-bold" id="registerModalLabel">
+                        Register for Conference
+                    </h5>
+                    <button type="button" class="btn-close"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body">
+
+                    <!-- Dismissible early-bird alert -->
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                        Hurry! Early bird registration ends in two days.
+                        <button type="button" class="btn-close"
+                                data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+
+                    <form>
+
+                        <!-- Basic Info -->
+                        <h6 class="fw-bold mb-3">Basic Info</h6>
+
+                        <div class="mb-3">
+                            <label for="regName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="regName"
+                                   placeholder="Your full name">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="regEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="regEmail"
+                                   placeholder="your@email.com">
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="jobRole" class="form-label">Job Role</label>
+                            <select class="form-select" id="jobRole">
+                                <option selected>Full Stack JS Developer</option>
+                                <option>Frontend Developer</option>
+                                <option>Backend Developer</option>
+                                <option>DevOps Engineer</option>
+                                <option>Student</option>
+                            </select>
+                        </div>
+
+                        <!-- Topics of Interest -->
+                        <h6 class="fw-bold mb-3">Which Topics Interest You Most?</h6>
+
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="topicFrameworks">
+                            <label class="form-check-label" for="topicFrameworks">
+                                JavaScript Frameworks
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="topicLibraries">
+                            <label class="form-check-label" for="topicLibraries">
+                                JavaScript Libraries
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="topicNode">
+                            <label class="form-check-label" for="topicNode">
+                                Node.js
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="topicBuildTools">
+                            <label class="form-check-label" for="topicBuildTools">
+                                Build Tools
+                            </label>
+                        </div>
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" id="topicES2015">
+                            <label class="form-check-label" for="topicES2015">
+                                ES2015
+                            </label>
+                        </div>
+
+                        <!-- Payment Info -->
+                        <h6 class="fw-bold mb-3">Payment Info</h6>
+
+                        <!-- Card Number, Zip, CVV on one row -->
+                        <div class="row mb-3">
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <label for="cardNumber" class="form-label">Card Number</label>
+                                <input type="text" class="form-control" id="cardNumber"
+                                       placeholder="1234 5678 9012 3456">
+                            </div>
+                            <div class="col-md-4 mb-3 mb-md-0">
+                                <label for="zipCode" class="form-label">Zip Code</label>
+                                <input type="text" class="form-control" id="zipCode"
+                                       placeholder="00000">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="cvv" class="form-label">CVV</label>
+                                <input type="text" class="form-control" id="cvv"
+                                       placeholder="123">
+                            </div>
+                        </div>
+
+                        <!-- Expiration Month and Year -->
+                        <div class="row mb-3">
+                            <div class="col-md-6 mb-3 mb-md-0">
+                                <label for="expMonth" class="form-label">Expiration Month</label>
+                                <select class="form-select" id="expMonth">
+                                    <option>January</option>
+                                    <option>February</option>
+                                    <option>March</option>
+                                    <option>April</option>
+                                    <option>May</option>
+                                    <option>June</option>
+                                    <option>July</option>
+                                    <option>August</option>
+                                    <option>September</option>
+                                    <option>October</option>
+                                    <option>November</option>
+                                    <option>December</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="expYear" class="form-label">Expiration Year</label>
+                                <select class="form-select" id="expYear">
+                                    <option>2025</option>
+                                    <option>2026</option>
+                                    <option>2027</option>
+                                    <option>2028</option>
+                                    <option>2029</option>
+                                    <option>2030</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+                <!-- Modal Footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark w-100">Register</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- END SECTION: MODAL (Member 4) -->
+
     <div class="container">
         <h2 class="text-center fw-light text-muted mb-4">Schedule</h2>
         <ul class="list-group list-group-flush">
